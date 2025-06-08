@@ -1,0 +1,12 @@
+# Força finais de linha Unix (LF) em todos os arquivos de texto
+* text=auto
+
+# Garante que arquivos de config usem LF
+*.cjs text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf

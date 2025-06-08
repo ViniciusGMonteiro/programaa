@@ -1,0 +1,78 @@
+/* Estilos específicos para garantir que ice-white seja aplicado apenas no tema claro */
+
+/* Garantir que checkboxes usem ice-white no tema claro */
+body:not(.dark-theme) .form-checkbox {
+  background-color: #f5f5f5;
+  border-color: #d1d5db;
+}
+
+body:not(.dark-theme) .form-checkbox:checked {
+  background-color: #3170d7;
+  border-color: #3170d7;
+}
+
+/* Garantir que inputs mantenham ice-white no tema claro */
+body:not(.dark-theme) input[type="email"],
+body:not(.dark-theme) input[type="password"],
+body:not(.dark-theme) input[type="text"] {
+  background-color: #f5f5f5;
+}
+
+body:not(.dark-theme) input[type="email"]:focus,
+body:not(.dark-theme) input[type="password"]:focus,
+body:not(.dark-theme) input[type="text"]:focus {
+  background-color: #ffffff;
+  border-color: #3170d7;
+  box-shadow: 0 0 0 2px rgba(49, 112, 215, 0.2);
+}
+
+/* Garantir que botões sociais usem ice-white no tema claro */
+body:not(.dark-theme) button.alt-button-animation {
+  background-color: #f5f5f5;
+}
+
+body:not(.dark-theme) button.alt-button-animation:hover {
+  background-color: #ffffff;
+}
+
+/* NOVO: Alterar apenas a parte branca do background effect para ice-white */
+body:not(.dark-theme) .bg-gradient-to-b.from-blue-400.to-white {
+  background: linear-gradient(to bottom, #60a5fa, #f5f5f5) !important;
+}
+
+body:not(.dark-theme) .bg-gradient-to-t.from-white.to-blue-400 {
+  background: linear-gradient(to top, #f5f5f5, #60a5fa) !important;
+}
+
+/* Ajustar outros gradientes que usam branco */
+body:not(.dark-theme) .bg-gradient-to-br.from-blue-400.via-blue-500.to-white {
+  background: linear-gradient(to bottom right, #60a5fa, #3b82f6, #f5f5f5) !important;
+}
+
+body:not(.dark-theme) .bg-gradient-to-tl.from-white.via-blue-500.to-blue-400 {
+  background: linear-gradient(to top left, #f5f5f5, #3b82f6, #60a5fa) !important;
+}
+
+/* Preservar todos os estilos do tema escuro */
+body.dark-theme #login-card {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme input[type="email"],
+body.dark-theme input[type="password"],
+body.dark-theme input[type="text"] {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-theme .form-checkbox {
+  background-color: #2d2d2d;
+  border-color: #555;
+}
+
+body.dark-theme button.alt-button-animation {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
